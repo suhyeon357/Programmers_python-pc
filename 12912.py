@@ -8,3 +8,8 @@ def solution(a, b):
         answer += i
 
     return answer
+
+def solution2(a, b):
+    if a > b:
+        a, b = b, a
+    return sum(range(a, b+1))
